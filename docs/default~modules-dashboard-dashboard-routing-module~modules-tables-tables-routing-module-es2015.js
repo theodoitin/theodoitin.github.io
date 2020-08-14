@@ -504,7 +504,7 @@ let CountryService = class CountryService {
         this._search$.next();
     }
     _getData() {
-        return this.http.get('http://articles-api.sea2tech.com/articles').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(data => {
+        return this.http.get('https://articles-api.sea2tech.com/articles').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(data => {
             this._allNewsList = data;
         }));
     }

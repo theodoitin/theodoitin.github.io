@@ -797,7 +797,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function _getData() {
           var _this2 = this;
 
-          return this.http.get('http://articles-api.sea2tech.com/articles').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(function (data) {
+          return this.http.get('https://articles-api.sea2tech.com/articles').pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_5__["map"])(function (data) {
             _this2._allNewsList = data;
           }));
         }

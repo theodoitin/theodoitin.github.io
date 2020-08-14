@@ -117,7 +117,7 @@ export class CountryService {
     }
 
     private _getData(): Observable<void> {
-        return this.http.get<News[]>('http://articles-api.sea2tech.com/articles').pipe(
+        return this.http.get<News[]>('https://articles-api.sea2tech.com/articles').pipe(
             map(data => {
                 this._allNewsList = data;
             })
