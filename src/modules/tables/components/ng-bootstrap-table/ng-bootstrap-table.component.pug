@@ -1,6 +1,6 @@
 form
     .form-group.form-inline
-        | Full text search: 
+        | Tìm kiếm: 
         input.form-control.ml-2(
             type='text',
             name='searchTerm',
@@ -13,56 +13,60 @@ form
                 th(scope='col') #
                 th(
                     scope='col',
-                    sbSortable='name',
+                    sbSortable='title',
                     (sort)='onSort($event)'
                 ) 
-                    span Country
+                    span Tiêu đề
                     sb-sort-icon(
-                        *ngIf='sortedColumn === "name"',
+                        *ngIf='sortedColumn === "title"',
                         [direction]='sortedDirection'
                     )
                 th(
                     scope='col',
-                    sbSortable='area',
+                    sbSortable='summary',
                     (sort)='onSort($event)'
                 ) 
-                    span Area
+                    span Tóm tắt
                     sb-sort-icon(
-                        *ngIf='sortedColumn === "area"',
+                        *ngIf='sortedColumn === "summary"',
                         [direction]='sortedDirection'
                     )
                 th(
                     scope='col',
-                    sbSortable='population',
+                    sbSortable='publishedDate',
                     (sort)='onSort($event)'
                 ) 
-                    span Population
+                    span Thời gian
                     sb-sort-icon(
-                        *ngIf='sortedColumn === "population"',
+                        *ngIf='sortedColumn === "publishedDate"',
                         [direction]='sortedDirection'
                     )
+                th(
+                    scope='col',
+                ) 
+                    span Link
         tbody
-            tr(*ngFor='let country of countries$ | async')
-                th(scope='row') {{ country.id }}
+            tr(*ngFor='let news of newsList$ | async')
+                th(scope='row') {{ news.id }}
                 td
-                    img.mr-2(
-                        [src]='\'https://upload.wikimedia.org/wikipedia/commons/\' + country.flag',
-                        style='width: 20px'
-                    )
                     ngb-highlight(
-                        [result]='country.name',
+                        [result]='news.title',
                         [term]='countryService.searchTerm'
                     )
                 td
-                    ngb-highlight(
-                        [result]='country.area | number',
-                        [term]='countryService.searchTerm'
+                    p.news-summary(
+                        [innerHtml]='news.summary'
                     )
                 td
                     ngb-highlight(
-                        [result]='country.population | number',
+                        [result]='news.publishedDate',
                         [term]='countryService.searchTerm'
                     )
+                td
+                    a(
+                        href='{{ news.link }}',
+                        target='_blank'
+                    ) {{ news.link }}
     .d-flex.justify-content-between.p-2
         ngb-pagination(
             [collectionSize]='total$ | async',
