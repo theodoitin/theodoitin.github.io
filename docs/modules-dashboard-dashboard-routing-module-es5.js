@@ -73,7 +73,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<sb-card>\n    <div class=\"card-header\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"table\"]'></fa-icon>Bài viết</div>\n    <div class=\"card-body\"><sb-ng-bootstrap-table [pageSize]=\"4\"></sb-ng-bootstrap-table></div\n></sb-card>\n";
+    __webpack_exports__["default"] = "<sb-card\n    ><div class=\"card-header\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"table\"]'></fa-icon>Bài viết</div>\n    <div class=\"card-body\"><sb-ng-bootstrap-table [pageSize]=\"4\"></sb-ng-bootstrap-table></div\n></sb-card>\n";
     /***/
   },
 
@@ -93,7 +93,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<sb-layout-dashboard>\n    <sb-dashboard-tables></sb-dashboard-tables>\n    <sb-dashboard-head title=\"Dashboard\" [hideBreadcrumbs]=\"false\"></sb-dashboard-head>\n    <sb-dashboard-cards></sb-dashboard-cards><sb-dashboard-charts></sb-dashboard-charts>\n</sb-layout-dashboard>\n";
+    __webpack_exports__["default"] = "<sb-layout-dashboard><sb-dashboard-head title=\"Dashboard\" [hideBreadcrumbs]=\"true\"></sb-dashboard-head><sb-dashboard-tables></sb-dashboard-tables><sb-dashboard-cards></sb-dashboard-cards><sb-dashboard-charts></sb-dashboard-charts></sb-layout-dashboard>\n";
     /***/
   },
 
