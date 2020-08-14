@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<sb-card\n    ><div class=\"card-header\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"table\"]'></fa-icon>Bài viết</div>\n    <div class=\"card-body\"><sb-ng-bootstrap-table [pageSize]=\"4\"></sb-ng-bootstrap-table></div\n></sb-card>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<sb-card\n    ><div class=\"card-header\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"table\"]'></fa-icon>Bài viết</div>\n    <div class=\"card-body\"><sb-ng-bootstrap-table [pageSize]=\"10\"></sb-ng-bootstrap-table></div\n></sb-card>\n");
 
 /***/ }),
 

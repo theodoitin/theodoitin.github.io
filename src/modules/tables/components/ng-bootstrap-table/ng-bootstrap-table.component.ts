@@ -19,7 +19,7 @@ import { Observable } from 'rxjs';
     styleUrls: ['ng-bootstrap-table.component.scss'],
 })
 export class NgBootstrapTableComponent implements OnInit {
-    @Input() pageSize = 4;
+    @Input() pageSize = 20;
 
     newsList$!: Observable<News[]>;
     total$!: Observable<number>;

@@ -1,10 +1,10 @@
 import { DecimalPipe } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 import { Injectable, PipeTransform } from '@angular/core';
-import { COUNTRIES } from '@modules/tables/data/countries';
 import { SortDirection } from '@modules/tables/directives';
 import { News } from '@modules/tables/models';
 import { BehaviorSubject, Observable, of, Subject } from 'rxjs';
-import { debounceTime, delay, switchMap, tap } from 'rxjs/operators';
+import { debounceTime, delay, map, switchMap, tap } from 'rxjs/operators';
 
 interface SearchResult {
     newsList: News[];
@@ -48,20 +48,23 @@ export class CountryService {
     private _search$ = new Subject<void>();
     private _newsList$ = new BehaviorSubject<News[]>([]);
     private _total$ = new BehaviorSubject<number>(0);
+    private _allNewsList: News[] = [];
 
     private _state: State = {
         page: 1,
-        pageSize: 4,
+        pageSize: 20,
         searchTerm: '',
         sortColumn: '',
         sortDirection: '',
     };
 
-    constructor(private pipe: DecimalPipe) {
+    constructor(private pipe: DecimalPipe, private http: HttpClient) {
         this._search$
             .pipe(
                 tap(() => this._loading$.next(true)),
                 debounceTime(120),
+                switchMap(() => this._getData()),
+                delay(120),
                 switchMap(() => this._search()),
                 delay(120),
                 tap(() => this._loading$.next(false))
@@ -113,11 +116,19 @@ export class CountryService {
         this._search$.next();
     }
 
+    private _getData(): Observable<void> {
+        return this.http.get<News[]>('http://articles-api.sea2tech.com/articles').pipe(
+            map(data => {
+                this._allNewsList = data;
+            })
+        );
+    }
+
     private _search(): Observable<SearchResult> {
         const { sortColumn, sortDirection, pageSize, page, searchTerm } = this._state;
 
         // 1. sort
-        let newsList = sort(COUNTRIES, sortColumn, sortDirection);
+        let newsList = sort(this._allNewsList, sortColumn, sortDirection);
 
         // 2. filter
         newsList = newsList.filter(news => matches(news, searchTerm, this.pipe));

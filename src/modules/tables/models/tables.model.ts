@@ -1,7 +1,7 @@
 export interface News {
     [key: string]: string;
-    publishedDate: string;
+    date_publish: string;
     title: string;
-    link: string;
-    summary: string;
+    url: string;
+    description: string;
 }

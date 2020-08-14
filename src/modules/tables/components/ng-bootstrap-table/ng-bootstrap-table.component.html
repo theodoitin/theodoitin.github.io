@@ -5,8 +5,8 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col" sbSortable="title" (sort)="onSort($event)"><span>Tiêu đề</span><sb-sort-icon *ngIf='sortedColumn === "title"' [direction]="sortedDirection"></sb-sort-icon></th>
-                <th scope="col" sbSortable="summary" (sort)="onSort($event)"><span>Tóm tắt</span><sb-sort-icon *ngIf='sortedColumn === "summary"' [direction]="sortedDirection"></sb-sort-icon></th>
-                <th scope="col" sbSortable="publishedDate" (sort)="onSort($event)"><span>Thời gian</span><sb-sort-icon *ngIf='sortedColumn === "publishedDate"' [direction]="sortedDirection"></sb-sort-icon></th>
+                <th scope="col" sbSortable="description" (sort)="onSort($event)"><span>Tóm tắt</span><sb-sort-icon *ngIf='sortedColumn === "description"' [direction]="sortedDirection"></sb-sort-icon></th>
+                <th scope="col" sbSortable="date_publish" (sort)="onSort($event)"><span>Thời gian</span><sb-sort-icon *ngIf='sortedColumn === "date_publish"' [direction]="sortedDirection"></sb-sort-icon></th>
                 <th scope="col"><span>Link</span></th>
             </tr>
         </thead>
@@ -14,18 +14,18 @@
             <tr *ngFor="let news of newsList$ | async">
                 <th scope="row">{{ news.id }}</th>
                 <td><ngb-highlight [result]="news.title" [term]="countryService.searchTerm"></ngb-highlight></td>
-                <td><p class="news-summary" [innerHtml]="news.summary"></p></td>
-                <td><ngb-highlight [result]="news.publishedDate" [term]="countryService.searchTerm"></ngb-highlight></td>
-                <td><a href="{{ news.link }}" target="_blank">{{ news.link }}</a></td>
+                <td><p class="news-summary" [innerHtml]="news.description"></p></td>
+                <td><ngb-highlight [result]="news.date_publish" [term]="countryService.searchTerm"></ngb-highlight></td>
+                <td><a href="{{ news.url }}" target="_blank">{{ news.url }}</a></td>
             </tr>
         </tbody>
     </table>
     <div class="d-flex justify-content-between p-2">
         <ngb-pagination [collectionSize]="total$ | async" [(page)]="countryService.page" [pageSize]="countryService.pageSize"></ngb-pagination
         ><select class="custom-select" style="width: auto;" name="pageSize" [(ngModel)]="countryService.pageSize"
-            ><option [ngValue]="2">2 items per page</option
-            ><option [ngValue]="4">4 items per page</option
-            ><option [ngValue]="6">6 items per page</option></select
+            ><option [ngValue]="20">20 items per page</option
+            ><option [ngValue]="40">40 items per page</option
+            ><option [ngValue]="60">60 items per page</option></select
         >
     </div>
 </form>
