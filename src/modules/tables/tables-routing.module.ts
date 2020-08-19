@@ -23,12 +23,8 @@ export const ROUTES: Routes = [
             breadcrumbs: [
                 {
                     text: 'Dashboard',
-                    link: '/dashboard',
-                },
-                {
-                    text: 'Tables',
-                    active: true,
-                },
+                    link: '/',
+                }
             ],
         } as SBRouteData,
     },

@@ -304,36 +304,20 @@ const routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: '/dashboard',
+        redirectTo: '/',
     },
     {
-        path: 'charts',
-        loadChildren: () => Promise.all(/*! import() | modules-charts-charts-routing-module */[__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("default~modules-charts-charts-routing-module~modules-dashboard-dashboard-routing-module"), __webpack_require__.e("modules-charts-charts-routing-module")]).then(__webpack_require__.bind(null, /*! modules/charts/charts-routing.module */ "./src/modules/charts/charts-routing.module.ts")).then(m => m.ChartsRoutingModule),
-    },
-    {
-        path: 'dashboard',
-        loadChildren: () => Promise.all(/*! import() | modules-dashboard-dashboard-routing-module */[__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("default~modules-charts-charts-routing-module~modules-dashboard-dashboard-routing-module"), __webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-tables-tables-routing-module"), __webpack_require__.e("modules-dashboard-dashboard-routing-module")]).then(__webpack_require__.bind(null, /*! modules/dashboard/dashboard-routing.module */ "./src/modules/dashboard/dashboard-routing.module.ts")).then(m => m.DashboardRoutingModule),
-    },
-    {
-        path: 'auth',
-        loadChildren: () => Promise.all(/*! import() | modules-auth-auth-routing-module */[__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("modules-auth-auth-routing-module")]).then(__webpack_require__.bind(null, /*! modules/auth/auth-routing.module */ "./src/modules/auth/auth-routing.module.ts")).then(m => m.AuthRoutingModule),
+        path: '',
+        loadChildren: () => Promise.all(/*! import() | modules-dashboard-dashboard-routing-module */[__webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module"), __webpack_require__.e("modules-dashboard-dashboard-routing-module")]).then(__webpack_require__.bind(null, /*! modules/dashboard/dashboard-routing.module */ "./src/modules/dashboard/dashboard-routing.module.ts")).then(m => m.DashboardRoutingModule),
     },
     {
         path: 'error',
-        loadChildren: () => Promise.all(/*! import() | modules-error-error-routing-module */[__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("modules-error-error-routing-module")]).then(__webpack_require__.bind(null, /*! modules/error/error-routing.module */ "./src/modules/error/error-routing.module.ts")).then(m => m.ErrorRoutingModule),
-    },
-    {
-        path: 'tables',
-        loadChildren: () => Promise.all(/*! import() | modules-tables-tables-routing-module */[__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-tables-tables-routing-module"), __webpack_require__.e("modules-tables-tables-routing-module")]).then(__webpack_require__.bind(null, /*! modules/tables/tables-routing.module */ "./src/modules/tables/tables-routing.module.ts")).then(m => m.TablesRoutingModule),
-    },
-    {
-        path: 'version',
-        loadChildren: () => Promise.all(/*! import() | modules-utility-utility-routing-module */[__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("modules-utility-utility-routing-module")]).then(__webpack_require__.bind(null, /*! modules/utility/utility-routing.module */ "./src/modules/utility/utility-routing.module.ts")).then(m => m.UtilityRoutingModule),
+        loadChildren: () => Promise.all(/*! import() | modules-error-error-routing-module */[__webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module"), __webpack_require__.e("modules-error-error-routing-module")]).then(__webpack_require__.bind(null, /*! modules/error/error-routing.module */ "./src/modules/error/error-routing.module.ts")).then(m => m.ErrorRoutingModule),
     },
     {
         path: '**',
         pathMatch: 'full',
-        loadChildren: () => Promise.all(/*! import() | modules-error-error-routing-module */[__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("modules-error-error-routing-module")]).then(__webpack_require__.bind(null, /*! modules/error/error-routing.module */ "./src/modules/error/error-routing.module.ts")).then(m => m.ErrorRoutingModule),
+        loadChildren: () => Promise.all(/*! import() | modules-error-error-routing-module */[__webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module"), __webpack_require__.e("modules-error-error-routing-module")]).then(__webpack_require__.bind(null, /*! modules/error/error-routing.module */ "./src/modules/error/error-routing.module.ts")).then(m => m.ErrorRoutingModule),
     },
 ];
 let AppRoutingModule = class AppRoutingModule {

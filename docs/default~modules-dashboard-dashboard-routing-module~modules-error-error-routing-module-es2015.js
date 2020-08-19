@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module"],{
 
 /***/ "./node_modules/@angular/forms/fesm2015/forms.js":
 /*!*******************************************************!*\
@@ -30860,7 +30860,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<li class=\"nav-item dropdown dropdown-user no-caret\" *ngIf=\"userService.user$ | async as user\" ngbDropdown placement=\"bottom-right\" display=\"dynamic\">\n    <a class=\"nav-link dropdown-toggle\" id=\"userDropdown\" ngbDropdownToggle data-cy=\"userMenu\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\"><fa-icon [icon]='[\"fas\", \"user\"]'></fa-icon></a>\n    <div class=\"dropdown-menu dropdown-menu-right\" ngbDropdownMenu aria-labelledby=\"dropdownUser\">\n        <h6 class=\"dropdown-header\">\n            <div class=\"dropdown-user-details\">\n                <div class=\"dropdown-user-details-name\">{{ user.firstName }} {{ user.lastName }}</div>\n                <div class=\"dropdown-user-details-email\">{{ user.email }}</div>\n            </div>\n        </h6>\n        <div class=\"dropdown-divider\"></div>\n        <a class=\"dropdown-item\" routerLink=\"/dashboard\">Settings</a><a class=\"dropdown-item\" routerLink=\"/dashboard\">Activity Log</a>\n        <div class=\"dropdown-divider\"></div>\n        <a class=\"dropdown-item\" routerLink=\"/dashboard\">Logout</a>\n    </div>\n</li>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<li class=\"nav-item dropdown dropdown-user no-caret\" *ngIf=\"userService.user$ | async as user\" ngbDropdown placement=\"bottom-right\" display=\"dynamic\">\n    <a class=\"nav-link dropdown-toggle\" id=\"userDropdown\" ngbDropdownToggle data-cy=\"userMenu\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\"><fa-icon [icon]='[\"fas\", \"user\"]'></fa-icon></a>\n    <div class=\"dropdown-menu dropdown-menu-right\" ngbDropdownMenu aria-labelledby=\"dropdownUser\">\n        <h6 class=\"dropdown-header\">\n            <div class=\"dropdown-user-details\">\n                <div class=\"dropdown-user-details-name\">{{ user.firstName }} {{ user.lastName }}</div>\n                <div class=\"dropdown-user-details-email\">{{ user.email }}</div>\n            </div>\n        </h6>\n        <div class=\"dropdown-divider\"></div>\n        <a class=\"dropdown-item\" routerLink=\"/\">Settings</a><a class=\"dropdown-item\" routerLink=\"/\">Activity Log</a>\n        <div class=\"dropdown-divider\"></div>\n        <a class=\"dropdown-item\" routerLink=\"/\">Logout</a>\n    </div>\n</li>\n");
 
 /***/ }),
 
@@ -30873,7 +30873,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<footer class=\"py-4 bg-light mt-auto\">\n    <div class=\"container-fluid\">\n        <div class=\"d-flex align-items-center justify-content-between small\">\n            <div class=\"text-muted\">Copyright &copy; Your Website 2020</div>\n            <div><a href=\"#\">Privacy Policy &middot;</a><a href=\"#\">Terms &amp; Conditions</a></div>\n        </div>\n    </div>\n</footer>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<footer class=\"py-4 bg-light mt-auto\">\n    <div class=\"container-fluid\">\n        <div class=\"d-flex align-items-center justify-content-between small\">\n            <div class=\"text-muted\">Copyright &copy; 47Team 2020</div>\n            <div><a href=\"#\">Privacy Policy &middot;</a><a href=\"#\">Terms &amp; Conditions</a></div>\n        </div>\n    </div>\n</footer>\n");
 
 /***/ }),
 
@@ -30899,7 +30899,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"sb-topnav navbar navbar-expand navbar-dark bg-dark\">\n    <a class=\"navbar-brand\" routerLink=\"/dashboard\">Theo dõi tin</a><button class=\"btn btn-link btn-sm order-1 order-lg-0\" id=\"sidebarToggle\" data-cy=\"topNavToggleSideNav\" (click)=\"toggleSideNav()\"><fa-icon [icon]='[\"fas\", \"bars\"]'></fa-icon></button\n    ><!-- Navbar Search-->\n    <form class=\"d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0\">\n        <div class=\"input-group\">\n            <input class=\"form-control\" type=\"text\" placeholder=\"Search for...\" aria-label=\"Search\" aria-describedby=\"basic-addon2\" />\n            <div class=\"input-group-append\">\n                <button class=\"btn btn-primary\" type=\"button\"><fa-icon [icon]='[\"fas\", \"search\"]'></fa-icon></button>\n            </div>\n        </div>\n    </form>\n    <!-- Navbar-->\n    <ul class=\"navbar-nav ml-auto ml-md-0\">\n        <sb-top-nav-user></sb-top-nav-user>\n    </ul>\n</nav>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<nav class=\"sb-topnav navbar navbar-expand navbar-dark bg-dark\">\n    <a class=\"navbar-brand\" routerLink=\"/\">Theo dõi tin</a><button class=\"btn btn-link btn-sm order-1 order-lg-0\" id=\"sidebarToggle\" data-cy=\"topNavToggleSideNav\" (click)=\"toggleSideNav()\"><fa-icon [icon]='[\"fas\", \"bars\"]'></fa-icon></button\n    ><!-- Navbar Search-->\n    <form class=\"d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0\">\n        <div class=\"input-group\">\n            <input class=\"form-control\" type=\"text\" placeholder=\"Search for...\" aria-label=\"Search\" aria-describedby=\"basic-addon2\" />\n            <div class=\"input-group-append\">\n                <button class=\"btn btn-primary\" type=\"button\"><fa-icon [icon]='[\"fas\", \"search\"]'></fa-icon></button>\n            </div>\n        </div>\n    </form>\n    <!-- Navbar-->\n    <ul class=\"navbar-nav ml-auto ml-md-0\">\n        <sb-top-nav-user></sb-top-nav-user>\n    </ul>\n</nav>\n");
 
 /***/ }),
 
@@ -32015,7 +32015,7 @@ const sideNavItems = {
     dashboard: {
         icon: 'tachometer-alt',
         text: 'Dashboard',
-        link: '/dashboard',
+        link: '/',
     },
 };
 
@@ -32483,4 +32483,4 @@ SideNavService = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
 /***/ })
 
 }]);
-//# sourceMappingURL=default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4-es2015.js.map
+//# sourceMappingURL=default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module-es2015.js.map

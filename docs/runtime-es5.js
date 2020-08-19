@@ -64,7 +64,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4":"default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4","default~modules-charts-charts-routing-module~modules-dashboard-dashboard-routing-module":"default~modules-charts-charts-routing-module~modules-dashboard-dashboard-routing-module","default~modules-dashboard-dashboard-routing-module~modules-tables-tables-routing-module":"default~modules-dashboard-dashboard-routing-module~modules-tables-tables-routing-module","modules-dashboard-dashboard-routing-module":"modules-dashboard-dashboard-routing-module","modules-charts-charts-routing-module":"modules-charts-charts-routing-module","modules-tables-tables-routing-module":"modules-tables-tables-routing-module","modules-auth-auth-routing-module":"modules-auth-auth-routing-module","modules-error-error-routing-module":"modules-error-error-routing-module","modules-utility-utility-routing-module":"modules-utility-utility-routing-module"}[chunkId]||chunkId) +    "-es5.js"
+/******/ 		return __webpack_require__.p + "" + ({"default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module":"default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module","modules-dashboard-dashboard-routing-module":"modules-dashboard-dashboard-routing-module","modules-error-error-routing-module":"modules-error-error-routing-module"}[chunkId]||chunkId) +    "-es5.js"
 /******/ 	}
 /******/
 /******/ 	// The require function

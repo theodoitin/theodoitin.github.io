@@ -9,7 +9,7 @@
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<sb-layout-error\n    ><div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-6\">\n                <div class=\"text-center mt-4\">\n                    <h1 class=\"display-1\">401</h1>\n                    <p class=\"lead\">Unauthorized</p>\n                    <p>Access to this resource is denied.</p>\n                    <a routerLink=\"/dashboard\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"arrow-left\"]'></fa-icon>Return to Dashboard</a>\n                </div>\n            </div>\n        </div>\n    </div></sb-layout-error\n>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<sb-layout-error\n    ><div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-6\">\n                <div class=\"text-center mt-4\">\n                    <h1 class=\"display-1\">401</h1>\n                    <p class=\"lead\">Unauthorized</p>\n                    <p>Access to this resource is denied.</p>\n                    <a routerLink=\"/\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"arrow-left\"]'></fa-icon>Return to Dashboard</a>\n                </div>\n            </div>\n        </div>\n    </div></sb-layout-error\n>\n");
 
 /***/ }),
 
@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<sb-layout-error\n    ><div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-6\">\n                <div class=\"text-center mt-4\">\n                    <img class=\"mb-4 img-error\" src=\"assets/img/error-404-monochrome.svg\" />\n                    <p class=\"lead\">This requested URL was not found on this server.</p>\n                    <a routerLink=\"/dashboard\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"arrow-left\"]'></fa-icon>Return to Dashboard</a>\n                </div>\n            </div>\n        </div>\n    </div></sb-layout-error\n>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<sb-layout-error\n    ><div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-6\">\n                <div class=\"text-center mt-4\">\n                    <img class=\"mb-4 img-error\" src=\"assets/img/error-404-monochrome.svg\" />\n                    <p class=\"lead\">This requested URL was not found on this server.</p>\n                    <a routerLink=\"/\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"arrow-left\"]'></fa-icon>Return to Dashboard</a>\n                </div>\n            </div>\n        </div>\n    </div></sb-layout-error\n>\n");
 
 /***/ }),
 
@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<sb-layout-error\n    ><div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-6\">\n                <div class=\"text-center mt-4\">\n                    <h1 class=\"display-1\">500</h1>\n                    <p class=\"lead\">Internal Server Error</p>\n                    <a routerLink=\"/dashboard\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"arrow-left\"]'></fa-icon>Return to Dashboard</a>\n                </div>\n            </div>\n        </div>\n    </div></sb-layout-error\n>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<sb-layout-error\n    ><div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-lg-6\">\n                <div class=\"text-center mt-4\">\n                    <h1 class=\"display-1\">500</h1>\n                    <p class=\"lead\">Internal Server Error</p>\n                    <a routerLink=\"/\"><fa-icon class=\"mr-1\" [icon]='[\"fas\", \"arrow-left\"]'></fa-icon>Return to Dashboard</a>\n                </div>\n            </div>\n        </div>\n    </div></sb-layout-error\n>\n");
 
 /***/ }),
 

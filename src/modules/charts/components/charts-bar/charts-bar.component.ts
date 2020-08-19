@@ -25,13 +25,22 @@ export class ChartsBarComponent implements OnInit, AfterViewInit {
         this.chart = new Chart(this.myBarChart.nativeElement, {
             type: 'bar',
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+                labels: [
+                    'Việt Nam',
+                    'Dịch Covid',
+                    'Tốt nghiệp',
+                    'Bầu cử',
+                    'Vắc xin',
+                    'Cổ phiếu',
+                    'cách mạng',
+                    'đà nẵng',
+                ],
                 datasets: [
                     {
-                        label: 'Revenue',
+                        label: 'Số lần xuất hiện',
                         backgroundColor: 'rgba(2,117,216,1)',
                         borderColor: 'rgba(2,117,216,1)',
-                        data: [4215, 5312, 6251, 7841, 9821, 14984],
+                        data: [20, 18, 15, 14, 10, 6, 4, 3],
                     },
                 ],
             },
@@ -39,9 +48,6 @@ export class ChartsBarComponent implements OnInit, AfterViewInit {
                 scales: {
                     xAxes: [
                         {
-                            time: {
-                                unit: 'month',
-                            },
                             gridLines: {
                                 display: false,
                             },
@@ -54,7 +60,7 @@ export class ChartsBarComponent implements OnInit, AfterViewInit {
                         {
                             ticks: {
                                 min: 0,
-                                max: 15000,
+                                max: 30,
                                 maxTicksLimit: 5,
                             },
                             gridLines: {
@@ -64,7 +70,7 @@ export class ChartsBarComponent implements OnInit, AfterViewInit {
                     ],
                 },
                 legend: {
-                    display: false,
+                    display: true,
                 },
             },
         });

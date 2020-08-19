@@ -685,38 +685,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     var routes = [{
       path: '',
       pathMatch: 'full',
-      redirectTo: '/dashboard'
+      redirectTo: '/'
     }, {
-      path: 'charts',
-      loadChildren: function loadChildren() {
-        return Promise.all(
-        /*! import() | modules-charts-charts-routing-module */
-        [__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("default~modules-charts-charts-routing-module~modules-dashboard-dashboard-routing-module"), __webpack_require__.e("modules-charts-charts-routing-module")]).then(__webpack_require__.bind(null,
-        /*! modules/charts/charts-routing.module */
-        "./src/modules/charts/charts-routing.module.ts")).then(function (m) {
-          return m.ChartsRoutingModule;
-        });
-      }
-    }, {
-      path: 'dashboard',
+      path: '',
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | modules-dashboard-dashboard-routing-module */
-        [__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("default~modules-charts-charts-routing-module~modules-dashboard-dashboard-routing-module"), __webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-tables-tables-routing-module"), __webpack_require__.e("modules-dashboard-dashboard-routing-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module"), __webpack_require__.e("modules-dashboard-dashboard-routing-module")]).then(__webpack_require__.bind(null,
         /*! modules/dashboard/dashboard-routing.module */
         "./src/modules/dashboard/dashboard-routing.module.ts")).then(function (m) {
           return m.DashboardRoutingModule;
-        });
-      }
-    }, {
-      path: 'auth',
-      loadChildren: function loadChildren() {
-        return Promise.all(
-        /*! import() | modules-auth-auth-routing-module */
-        [__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("modules-auth-auth-routing-module")]).then(__webpack_require__.bind(null,
-        /*! modules/auth/auth-routing.module */
-        "./src/modules/auth/auth-routing.module.ts")).then(function (m) {
-          return m.AuthRoutingModule;
         });
       }
     }, {
@@ -724,32 +702,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | modules-error-error-routing-module */
-        [__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("modules-error-error-routing-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module"), __webpack_require__.e("modules-error-error-routing-module")]).then(__webpack_require__.bind(null,
         /*! modules/error/error-routing.module */
         "./src/modules/error/error-routing.module.ts")).then(function (m) {
           return m.ErrorRoutingModule;
-        });
-      }
-    }, {
-      path: 'tables',
-      loadChildren: function loadChildren() {
-        return Promise.all(
-        /*! import() | modules-tables-tables-routing-module */
-        [__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-tables-tables-routing-module"), __webpack_require__.e("modules-tables-tables-routing-module")]).then(__webpack_require__.bind(null,
-        /*! modules/tables/tables-routing.module */
-        "./src/modules/tables/tables-routing.module.ts")).then(function (m) {
-          return m.TablesRoutingModule;
-        });
-      }
-    }, {
-      path: 'version',
-      loadChildren: function loadChildren() {
-        return Promise.all(
-        /*! import() | modules-utility-utility-routing-module */
-        [__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("modules-utility-utility-routing-module")]).then(__webpack_require__.bind(null,
-        /*! modules/utility/utility-routing.module */
-        "./src/modules/utility/utility-routing.module.ts")).then(function (m) {
-          return m.UtilityRoutingModule;
         });
       }
     }, {
@@ -758,7 +714,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       loadChildren: function loadChildren() {
         return Promise.all(
         /*! import() | modules-error-error-routing-module */
-        [__webpack_require__.e("default~modules-auth-auth-routing-module~modules-charts-charts-routing-module~modules-dashboard-dash~d4e793c4"), __webpack_require__.e("modules-error-error-routing-module")]).then(__webpack_require__.bind(null,
+        [__webpack_require__.e("default~modules-dashboard-dashboard-routing-module~modules-error-error-routing-module"), __webpack_require__.e("modules-error-error-routing-module")]).then(__webpack_require__.bind(null,
         /*! modules/error/error-routing.module */
         "./src/modules/error/error-routing.module.ts")).then(function (m) {
           return m.ErrorRoutingModule;
